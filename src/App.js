@@ -11,14 +11,14 @@ function App() {
       <div className="App">
         <Navbar></Navbar>
         <Route path='/' component={Home} exact></Route>
-        <Route path='/' component={Table} exact></Route>
         <Route path='/mom' component={Home}></Route>
         <Route path='/mom' component={TableMom}></Route>
         <Route path='/finance' component={Home}></Route>
-        <Route path='/finance' component={TableFinance}></Route>
       </div>
     </Router>
   );
 }
 
 export default App;
+
+// <Route path='/' component={Table} exact></Route>

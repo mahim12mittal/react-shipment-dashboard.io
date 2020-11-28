@@ -14,51 +14,15 @@ const useStyles = makeStyles({
     },
 });
 
-function createData(name, ownerName, gst, invoice, PaymentRecievedDate, BillingStartDate, MinimumBilling, BillingRemark, Actions) {
-    return { name, ownerName, gst, invoice, PaymentRecievedDate, BillingStartDate, MinimumBilling, BillingRemark, Actions };
+function createData(dealid, dealname, name, status, ownerName, accountManager, implementationOwner, invoice, billingRelatedRemark, contractedAmount, invoiceAmount, invoiceRaiseDate, invoiceDueDate, billingStartDate, overdueDays, paymentExpectedAmount, paymentExpectedDate, paymentReceivedAmount, paymentReceivedDate, pendingAmount) {
+    return { dealid, dealname, name, status, ownerName, accountManager, implementationOwner, invoice, billingRelatedRemark, contractedAmount, invoiceAmount, invoiceRaiseDate, invoiceDueDate, billingStartDate, overdueDays, paymentExpectedAmount, paymentExpectedDate, paymentReceivedAmount, paymentReceivedDate, pendingAmount };
 }
 //sample data 
 const rows = [
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
-    createData('Ashoka Logistics', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '30,000', '30 per device', 'Mahesh'),
+    createData('', '', 'Ashoka Logistics', '', 'Ayub Sait', 'GSTIN3456789', '1,60,000', '01-02-2020', '', '', '30,000', '30 per device', 'Mahesh'),
 ];
 
-export default function BasicTable() {
+export default function BasicTable(props) {
     const classes = useStyles();
 
     return (
@@ -66,29 +30,49 @@ export default function BasicTable() {
             <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell>Comapany Name</TableCell>
-                        <TableCell align="center">Owner Name</TableCell>
-                        <TableCell align="center">GST No.</TableCell>
-                        <TableCell align="center">Invoice Month</TableCell>
-                        <TableCell align="center">Payment Received Date</TableCell>
-                        <TableCell align="center">Billing Start Date</TableCell>
-                        <TableCell align="center">Minimum Billing</TableCell>
-                        <TableCell align="center">Billing Remark</TableCell>
-                        <TableCell align="center">Actions</TableCell>
+                        {props.state.dealID ? <TableCell>Deal id</TableCell> : ''}
+                        {props.state.dealName ? <TableCell align="center">Deal Name</TableCell> : ''}
+                        {props.state.companyName ? <TableCell align="center">Company Name</TableCell> : ''}
+                        {props.state.status ? <TableCell align="center">Status</TableCell> : ''}
+                        {props.state.ownerName ? <TableCell align="center">Owner Name</TableCell> : ''}
+                        {props.state.accountManager ? <TableCell align="center">Account Manager</TableCell> : ''}
+                        {props.state.implementationOwner ? <TableCell align="center">Implementation Owner</TableCell> : ''}
+                        {props.state.invoice ? <TableCell align="center">Invoice Month</TableCell> : ''}
+                        {props.state.billingRelatedRemark ? <TableCell align="center">Billing Related Remark</TableCell> : ''}
+                        {props.state.contractedAmount ? <TableCell align="center">Contracted Amount</TableCell> : ''}
+                        {props.state.invoiceAmount ? <TableCell align="center">Invoice Amount</TableCell> : ''}
+                        {props.state.invoiceRaiseDate ? <TableCell align="center">Invoice Raise Date</TableCell> : ''}
+                        {props.state.invoiceDueDate ? <TableCell align="center">Invoice Due Date</TableCell> : ''}
+                        {props.state.overdueDays ? <TableCell align="center">Overdue Days</TableCell> : ''}
+                        {props.state.paymentExpectedAmount ? <TableCell align="center">Payment Expected Amount</TableCell> : ''}
+                        {props.state.paymentExpectedDate ? <TableCell align="center">Payment Expected Date</TableCell> : ''}
+                        {props.state.paymentReceivedAmount ? <TableCell align="center">Payment Received Amount</TableCell> : ''}
+                        {props.state.paymentReceivedDate ? <TableCell align="center">Payment Received Date</TableCell> : ''}
+                        {props.state.pendingAmount ? <TableCell align="center">Pending Amount</TableCell> : ''}
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
                         <TableRow key={row.name}>
-                            <TableCell component="th" scope="row">{row.name}</TableCell>
-                            <TableCell align="center">{row.ownerName}</TableCell>
-                            <TableCell align="center">{row.gst}</TableCell>
-                            <TableCell align="center">{row.invoice}</TableCell>
-                            <TableCell align="center">{row.PaymentRecievedDate}</TableCell>
-                            <TableCell align="center">{row.BillingStartDate}</TableCell>
-                            <TableCell align="center">{row.MinimumBilling}</TableCell>
-                            <TableCell align="center">{row.BillingRemark}</TableCell>
-                            <TableCell align="center">{row.Actions}</TableCell>
+                            {props.state.dealID ? <TableCell component="th" scope="row">{row.dealid}</TableCell> : ''}
+                            {props.state.dealName ? <TableCell align="center">{row.dealname}</TableCell> : ''}
+                            {props.state.companyName ? <TableCell align="center">{row.name}</TableCell> : ''}
+                            {props.state.status ? <TableCell align="center">{row.status}</TableCell> : ''}
+                            {props.state.ownerName ? <TableCell align="center">{row.ownerName}</TableCell> : ''}
+                            {props.state.accountManager ? <TableCell align="center">{row.accountManager}</TableCell> : ''}
+                            {props.state.implementationOwner ? <TableCell align="center">{row.implementationOwner}</TableCell> : ''}
+                            {props.state.invoice ? <TableCell align="center">{row.invoice}</TableCell> : ''}
+                            {props.state.billingRelatedRemark ? <TableCell align="center">{row.billingRelatedRemark}</TableCell> : ''}
+                            {props.state.contractedAmount ? <TableCell align="center">{row.contractedAmount}</TableCell> : ''}
+                            {props.state.invoiceAmount ? <TableCell align="center">{row.invoiceAmount}</TableCell> : ''}
+                            {props.state.invoiceRaiseDate ? <TableCell align="center">{row.invoiceRaiseDate}</TableCell> : ''}
+                            {props.state.invoiceDueDate ? <TableCell align="center">{row.invoiceDueDate}</TableCell> : ''}
+                            {props.state.overdueDays ? <TableCell align="center">{row.overdueDays}</TableCell> : ''}
+                            {props.state.paymentExpectedAmount ? <TableCell align="center">{row.paymentExpectedAmount}</TableCell> : ''}
+                            {props.state.paymentExpectedDate ? <TableCell align="center">{row.paymentExpectedDate}</TableCell> : ''}
+                            {props.state.paymentReceivedAmount ? <TableCell align="center">{row.paymentReceivedAmount}</TableCell> : ''}
+                            {props.state.paymentReceivedDate ? <TableCell align="center">{row.paymentReceivedDate}</TableCell> : ''}
+                            {props.state.pendingAmount ? <TableCell align="center">{row.pendingAmount}</TableCell> : ''}
                         </TableRow>
                     ))}
                 </TableBody>
